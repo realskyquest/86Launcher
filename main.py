@@ -3,7 +3,6 @@ from tkinter import ttk, filedialog, messagebox
 from PIL import Image, ImageTk
 import requests
 import threading
-import requests
 
 class Engine:
     def __init__(self, root):
