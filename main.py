@@ -1,12 +1,9 @@
-from email import message
 import tkinter as tk
 from tkinter import ttk, filedialog, messagebox
-from turtle import down
 from PIL import Image, ImageTk
 import requests
 import threading
 import requests
-import os
 
 class Engine:
     def __init__(self, root):
