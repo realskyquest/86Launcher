@@ -7,21 +7,21 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: windows-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
-      - name: Find main.py
-        run: |
-          find . -name main.py -type f -print
-      - name: Build executable
-        uses: JackMcKew/pyinstaller-action-windows@main
-        with:
-          path: .
-          spec: main.spec
-          build: dist/windows
-      - name: Upload artifact
-        uses: actions/upload-artifact@v2
-        with:
-          name: my-app
-          path: dist/windows
+      -name: Checkout code
+       uses: actions/checkout@v3
+      -name: Setup Python
+       uses: actions/setup-python@v4
+       with:
+         python-version: '3.x'
+      -name: Install PyInstaller
+       run: python -m pip install pyinstaller
+      -name: Build executable with PyInstaller
+       run: pyinstaller --onefile main.py
+      -name: Upload artifact
+       uses: actions/upload-artifact@v3
+       with:
+         name: main-exe
+         path: dist/main.exe
+
