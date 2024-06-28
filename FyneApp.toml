@@ -1,0 +1,8 @@
+Website = "https://github.com/realskyquest/86launcher"
+
+[Details]
+  Icon = "Icon.png"
+  Name = "86Launcher"
+  ID = "com.github.realskquest-86launcher"
+  Version = "1.0.0"
+  Build = 4
