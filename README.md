@@ -1,10 +1,18 @@
-# 86-game-launcher
+# 86 Game Launcher
 
-A game launcher for 86  
+A launcher was made so that players can easily check what versions are downloadable. The launcher supports caching to reduce time to download and make it faster ( *Launcher is closed or crashed or WiFi was down, it will use the cache to get the current progress!* )
 
-This branch was rewritten in go with fyne  
+Go to releases to get the latest launcher, runs on windows 64-bit  
+https://github.com/realskyquest/86Launcher/releases  
 
-It has improved ui, notifications, bugs handling and finally the downloading gets a cache system which is useful when download fails  
-The only possible bugs are weird ui issues and asset corruption
+**If you changed the version too many times, you will get rate limited!**
 
-Currently the releases automation system is being worked on, after it is done it will be released for windows!  
+## Self compile
+
+If you want to self compile for some reason check out the following links!
+```
+git clone https://github.com/realskyquest/86Launcher.git
+```
+https://go.dev/doc/install  
+https://docs.fyne.io/started/  
+https://docs.fyne.io/started/packaging  
