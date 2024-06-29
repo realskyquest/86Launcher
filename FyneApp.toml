@@ -3,6 +3,12 @@ Website = "https://github.com/realskyquest/86launcher"
 [Details]
   Icon = "Icon.png"
   Name = "86Launcher"
+<<<<<<< Updated upstream
   ID = "com.github.realskquest-86launcher"
   Version = "1.0.0"
   Build = 4
+=======
+  ID = "com.github.realskyquest_86launcher"
+  Version = "1.0.0"
+  Build = 1
+>>>>>>> Stashed changes

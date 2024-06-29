@@ -152,6 +152,7 @@ func (l *Launcher) DownloadFile(path string, assetDownloadTag string, assetDownl
 		if assetSize > 0 && p == assetSize {
 			fmt.Printf("\rProgress: %d%%\n", p*100/assetSize)
 
+<<<<<<< Updated upstream
 			writtenSize := written
 			writtenSizeMB := float64(writtenSize) / (1024 * 1024)
 			writtenSizeMBRounded := math.Round(writtenSizeMB*1000) / 1000
@@ -159,6 +160,15 @@ func (l *Launcher) DownloadFile(path string, assetDownloadTag string, assetDownl
 			assetSizeMB := float64(assetSize) / (1024 * 1024)
 			assetSizeMBRounded := math.Round(assetSizeMB*1000) / 1000
 			l.assetDownloadProgress.SetText(fmt.Sprintf("Progress: %0.3f Mb / %0.3f Mb", writtenSizeMBRounded, assetSizeMBRounded))
+=======
+			// writtenSize := written
+			// writtenSizeMB := float64(writtenSize) / (1024 * 1024)
+			// writtenSizeMBRounded := math.Round(writtenSizeMB*1000) / 1000
+			// assetSize := assetDownloadSize
+			// assetSizeMB := float64(assetSize) / (1024 * 1024)
+			// assetSizeMBRounded := math.Round(assetSizeMB*1000) / 1000
+			// l.assetDownloadProgress.SetText(fmt.Sprintf("Progress: %0.3f Mb / %0.3f Mb", writtenSizeMBRounded, assetSizeMBRounded))
+>>>>>>> Stashed changes
 		}
 	}
 
@@ -185,6 +195,10 @@ func (l *Launcher) DownloadFileThread(_app fyne.App) {
 		fmt.Println(err)
 		_app.SendNotification(fyne.NewNotification("86 Game Launcher: Download Error", err.Error()))
 	}
+<<<<<<< Updated upstream
     _app.SendNotification(fyne.NewNotification("86 Game Launcher: Download Status", "Asset has been installed!"))
+=======
+	_app.SendNotification(fyne.NewNotification("86 Game Launcher: Download Status", "Asset has been installed!"))
+>>>>>>> Stashed changes
 	l.isDownloading = false
 }
