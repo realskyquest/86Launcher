@@ -5,11 +5,9 @@ import (
 )
 
 func main() {
-<<<<<<< Updated upstream
 	_app := app.New()
-=======
 	_app := app.NewWithID("com.github.realskyquest_86launcher")
->>>>>>> Stashed changes
+
 	_app.SetIcon(resourceIconPng)
 
 	l := NewLauncher()
