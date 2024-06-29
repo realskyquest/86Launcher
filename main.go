@@ -5,7 +5,6 @@ import (
 )
 
 func main() {
-	_app := app.New()
 	_app := app.NewWithID("com.github.realskyquest_86launcher")
 
 	_app.SetIcon(resourceIconPng)
